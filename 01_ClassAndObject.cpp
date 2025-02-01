@@ -1,15 +1,13 @@
-
-//1 program to create class and object
 #include<iostream>
 using namespace std;
-  class HERO{
-    //properties
+  class Abc{
+    //Properties
     int health;
   };
   
 int main(){
-  //creation of object's
-  HERO h1;
+  //Creation of Object's
+  Abc h1;
   cout<<"size :" <<sizeof(h1)<<endl;
   return 0;
 }

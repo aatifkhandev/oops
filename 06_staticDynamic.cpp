@@ -2,7 +2,7 @@
 //
 #include<iostream>
 using namespace std;
-class HERO{
+class Abc{
  //properties
  private: 
  int health;
@@ -14,34 +14,34 @@ class HERO{
     cout<<level<<endl;
  }
  //getter
- int gethealth(){
+ int getHealth(){
     return health;
  }
- char getlevel(){
+ char getLevel(){
     return level;
  }
  //setters
- void sethealth(int h){
+ void setHealth(int h){
   health = h;
  }
- void setlevel(char ch){
+ void setLevel(char ch){
 level = ch;
 }
  };
  int main(){
     //static allocation
-     HERO a;
-     a.sethealth(700);
-     a.setlevel('B');
+     Abc a;
+     a.setHealth(700);
+     a.setLevel('B');
      cout<<"level is "<<a.level<<endl;
-     cout<<"helath is "<<a.gethealth()<<endl;
+     cout<<"Health is "<<a.getHealth()<<endl;
 
      //dynamic allocation
-    HERO*b = new HERO;
-    b->sethealth(700);
-    b->setlevel('A');
+    Abc*b = new Abc;
+    b->setHealth(700);
+    b->setLevel('A');
      cout<<"level is "<<(*b).level<<endl;
-     cout<<"helath is "<<(*b).gethealth()<<endl;
+     cout<<"Health is "<<(*b).getHealth()<<endl;
      cout<<"level is "<<b->level<<endl;
-     cout<<"health is "<<b->gethealth()<<endl;
+     cout<<"health is "<<b->getHealth()<<endl;
  }

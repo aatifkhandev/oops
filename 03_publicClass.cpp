@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-class HERO {
+class Abc {
     //properties
     public : 
     int health;
@@ -10,9 +10,9 @@ class HERO {
     }
 };
     int main(){
-        HERO ramesh;
-        ramesh.health = 700;
-        ramesh.level = 'A';
+        Abc Aatif;
+        Aatif.health = 700;
+        Aatif.level = 'A';
         cout<<"health is "<<ramesh.health<<endl;
         cout<<"level is : "<<ramesh.level<<endl;
      }

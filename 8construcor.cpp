@@ -1,7 +1,7 @@
 //constructor
 #include<iostream>
 using namespace std;
-class HERO{
+class Abc{
  //properties
  private: 
  int health;
@@ -9,7 +9,7 @@ class HERO{
  public:
  char level;
 
- HERO(){
+ Abc(){
     cout<<"constructor called"<<endl;
  }
 
@@ -17,27 +17,27 @@ class HERO{
     cout<<level<<endl;
  }
  //getter
- int gethealth(){
+ int getHealth(){
     return health;
  }
- char getlevel(){
+ char getLevel(){
     return level;
  }
  //setters
- void sethealth(int h){
+ void setHealth(int h){
   health = h;
  }
- void setlevel(char ch){
+ void setLevel(char ch){
 level = ch;
 }
  };
  int main(){
 //object created statically
 cout<<"hi"<<endl;
-HERO ramesh;
+Abc Aatif;
 cout<<"hello"<<endl;
 //dynamically
-HERO *b = new HERO;
+Abc *b = new HERO;
 HERO *b = new HERO();
 
 
